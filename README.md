@@ -26,6 +26,7 @@ You can find STEP and STL files available in the "CAD" directory, or if you want
 
 
 [![Bee Write Back Demo Video](https://img.youtube.com/vi/mUFC60MM2Fw/0.jpg)](https://youtu.be/mUFC60MM2Fw)
+
 ^ Click me to watch a quick demo ^
 
 ## Parts List
