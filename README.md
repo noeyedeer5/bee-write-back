@@ -50,3 +50,9 @@ You can find STEP and STL files available in the "CAD" directory, or if you want
 | PLA Filament | ~ | ~ | ~ | Will update with exact filament usage |
 
 **Total: ~$200**
+
+## TODO
+
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
