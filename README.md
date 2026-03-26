@@ -90,6 +90,12 @@ The OLED screen that I sourced arrived crooked, meaning that I had to adjust the
 
 The battery life sucks right now, and the power switch does a full power cycle when flipped. Hopefully with the PiJuice Zero I can integrate a sleep mode.
 
+## Block Diagram
+
+Below is the proposed block diagram for the next version of the Bee-Write-Back.
+
+[!Bee Write Back](images/block.png)
+
 ## TODO
 
 - [x] Create Github repo
