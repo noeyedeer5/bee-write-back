@@ -56,7 +56,7 @@ In the Software folder, you will also find my .bashrc and .bashprofile file, whi
 For more a more detailed breakdown of the cost for each variant, please reference the individual BOMs in their respective directory. Below are the rough totals for each variant. Screws, wires and filament are not included in the total cost. Note: the Android variant cost does not include the phone, but I have seen phones for as little as $20 on FB Marketplace.
   
 - Original: $220
-- PiJuice: $250
+- PiJuice: $270
 - Android: $120  
   
 **This number does NOT include shipping, taxes and/or tariffs**
