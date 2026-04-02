@@ -12,4 +12,5 @@
 | USB Hub | 1 | $8 | [amazon](https://a.co/d/0i44oODq) | |
 | FPC HDMI Cable | 1 | $9 | [amazon](https://a.co/d/05EBCFm5) | 0.2M variant |
 | FPC connector | 1 | $7 | [amazon](https://a.co/d/0dyc08eN) | Mini HDMI male straight|
-|**Total**| | **$270** | 
+| USB A DAC | 1 | $5 | [amazon](https://a.co/d/0crqPbCJ) | Optional
+|**Total**| | **$275** | 

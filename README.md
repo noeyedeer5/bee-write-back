@@ -1,6 +1,6 @@
 # Bee Write Back
 
-![Bee Write Back WriterDeck](images/deck.jpeg)
+![Bee Write Back WriterDeck](images/writerdeck_1.jpeg)
 
 ## Table of Contents
 
@@ -24,7 +24,12 @@ After creating the first one, I wanted to make it as cheap and available as poss
 
 ## Build Guide
 
-Since this is still a WIP, and I am ironing out some small changes, I have not created a formal build guide yet. However, I have put together 3 BOMs down below. Expect a build guide soon!
+Since this is still a WIP, and I am ironing out some small changes, I have not created a formal build guide yet. However, I have put together 3 BOMs down below. Expect a build guide soon!  
+
+For now I have included block diagrams for each variant:
+- [Original](images/block_OG.png)
+- [PiJuice](images/block_PJ.png)
+- [Android](images/block_AOSP.png)
 
 ## Hardware
 
@@ -36,7 +41,7 @@ Main - Original design, utilizes Waveshare battery hat
 PiJuice - Improved design, utilizes PiJuice Zero hat
 Android - Adapted design, utilizes Android phone instead of Raspberry Pi. 
 
-If you want to 3D print this, you can find the STLs and 3MF files in the [CAD](CAD) directory.
+If you want to 3D print this, you can find the STLs and 3MF files in the [Hardware](Hardware) directory.
 
 Since the faceplate utilizes multicolor printing, I have included a 3MF file. If you don't have access to multicolor printing or just want a blank faceplate, the regular STL will work. I printed my deck out of PLA, but PETG would also work.
 
@@ -55,8 +60,8 @@ In the Software folder, you will also find my .bashrc and .bashprofile file, whi
 
 For more a more detailed breakdown of the cost for each variant, please reference the individual BOMs in their respective directory. Below are the rough totals for each variant. Screws, wires and filament are not included in the total cost. Note: the Android variant cost does not include the phone, but I have seen phones for as little as $20 on FB Marketplace.
   
-- Original: $220
-- PiJuice: $270
-- Android: $120  
+- Original: [$220](Hardware/Original/BOM_OG.md)
+- PiJuice: [$270](Hardware/PiJuice/BOM_PJ.md)
+- Android: [$120](Hardware/Android/BOM_AOSP.md)  
   
 **This number does NOT include shipping, taxes and/or tariffs**
