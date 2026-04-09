@@ -1,6 +1,6 @@
 # Bee Write Back
 
-![Bee Write Back WriterDeck](images/bee-write-back_1.jpeg)
+![Bee Write Back WriterDeck](images/bee-write-back.jpeg)
 
 ## Table of Contents
 
@@ -22,16 +22,21 @@ To solve this problem, I created a simple Raspberry Pi based journal, which I co
 
 ## Build Guide
 
-Since this is still a WIP, and I am ironing out some small changes, I have not created a formal build guide yet. However, I have put together a [BOM](Hardware/BOM.md) and a [block diagram](images/block.png) for now. Expect a build guide soon!  
+![Bee Write Back Components](images/BOM.jpg)
+  
+You can view the PDF [here](Hardware/Bee%20Write%20Back%20Build%20Guide.pdf)  
+Or you can watch an assembly video here  
+And if you're curious, try spinning around the 3D model [here](https://cad.onshape.com/documents/e6482d1ab00cb5a2719e37b7/w/38d6de8130338c05d74e4ecf/e/8865c15cb975933cc3691846?renderMode=0&uiState=69bdc61baa0cf63feb704019). Onshape is free, and I highly encourage taking a look at the model in 3D!
 
 ## Hardware
 
-You can find STEP and STL files available in the [CAD](Hardware/CAD) directory, or if you want to go spin the model around, you can check it out in Onshape [here](https://cad.onshape.com/documents/e6482d1ab00cb5a2719e37b7/w/38d6de8130338c05d74e4ecf/e/8865c15cb975933cc3691846?renderMode=0&uiState=69bdc61baa0cf63feb704019). Onshape is free to use (but all designs are public), so I encourage you to create an account and start learning about CAD.
+![CAD](images/CAD.png)
 
+You can find STEP and STL files available in the [CAD](Hardware/CAD) directory
 
 If you want to 3D print this, you can find the STLs and 3MF files in the [Print](Hardware/CAD/Print) directory.
 
-Since the faceplate utilizes multicolor printing, I have included a 3MF file. If you don't have access to multicolor printing or just want a blank faceplate, the regular STL will work. I printed my deck out of PLA, but PETG would also work.
+Since the faceplate and base utilizes multicolor printing, I have included a 3MF file. If you don't have access to multicolor printing or just want a blank faceplate, the regular STL will work. I printed my deck out of PLA, but PETG would also work.
 
 ## Software
 

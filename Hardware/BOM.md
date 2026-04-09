@@ -7,7 +7,7 @@
 | Air40 Keyboard PCB | 1 | $39 | [ymdk](https://ymdkey.com/products/ymd40-air40-rgb-hot-swap-pcb?variant=41586586779709) | Only PCB |
 | Keyboard Switches | 48 | $20 | [ymdk](https://ymdkey.com/collections/gateron-switches) | Cherry MX footprint |
 | Keycaps | 48 | $20 | [ymdk](https://ymdkey.com/collections/dsa) | DSA or XDA profile |
-| USB C to Micro B Cable | 2 | $6 | [amazon](https://a.co/d/02yecqgL) | 1ft variant|
-| FPC HDMI Cable | 1 | $9 | [amazon](https://a.co/d/05EBCFm5) | 0.2M variant |
-| FPC connector | 1 | $7 | [amazon](https://a.co/d/0dyc08eN) | Mini HDMI male straight|
+| USB A to C Cable | 1 | $8 | [amazon](https://a.co/d/02yecqgL) | 0.8FT 2-Pack|
+| Mini to mini HDMI Cable | 1 | $10 | [amazon](https://a.co/d/08mENb0Y) | 0.3M variant |
+| USB C Extender | 1 | $7 | [amazon](https://a.co/d/05VpJQLo) | Straight version |
 |**Total**| | **$200** | 
