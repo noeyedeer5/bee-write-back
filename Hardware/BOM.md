@@ -1,6 +1,6 @@
 | Part | Qty | Cost | Link | Notes |
 |-----|-----|-------|-------|-------|
-| Raspberry Pi Zero 2 W | 1 | $20 | [raspberrypi](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) | With headers |
+| Raspberry Pi Zero 2 W | 1 | $20 | [raspberrypi](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) | Without headers |
 | 5.5" AMOLED Screen | 1 | $45 | [aliexpress](https://www.aliexpress.us/item/3256805978359959.html?channel=twinner) | |
 | UPS and Hub Pi Hat | 1 | $25 | [amazon](https://a.co/d/0dS5rs5b) | |
 | 18650 battery | 1 | $2-5 | [various](http://batteries.parametrek.com/index.html?size=18650) | |
