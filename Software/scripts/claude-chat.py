@@ -1245,12 +1245,7 @@ def chat_session(stdscr, client, accent, prompt_color, session_data, session_fil
                     do_save_session()
                     status_time = time.time()
                     continue
-
-                else:
-                    status_msg = f"unknown: {cmd}  (/help)"
-                    status_time = time.time()
-                    continue
-
+                    
                 elif cmd == "/summarize":
                     if not exchanges:
                         status_msg = "nothing to summarize yet"
@@ -1300,7 +1295,12 @@ def chat_session(stdscr, client, accent, prompt_color, session_data, session_fil
                         status_msg = f"couldn't write context.txt: {e}"
                     status_time = time.time()
                     continue
-
+                
+                else:
+                    status_msg = f"unknown: {cmd}  (/help)"
+                    status_time = time.time()
+                    continue
+              
             # ── Send to API ──
             api_messages.append({"role": "user", "content": user_input})
 
