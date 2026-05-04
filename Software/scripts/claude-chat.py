@@ -956,6 +956,7 @@ def chat_session(stdscr, client, accent, prompt_color, session_data, session_fil
                 {"text": "", "style": curses.A_NORMAL},
                 {"text": "  press h, q, Esc, or Enter to close", "style": curses.A_DIM},
                 {"text": "", "style": curses.A_NORMAL},
+                {"text": "  /summarize       append conversation summary to ~/context.txt", "style": curses.color_pair(2)},
             ]
             lines = help_lines
             scroll = 0
@@ -1247,6 +1248,56 @@ def chat_session(stdscr, client, accent, prompt_color, session_data, session_fil
 
                 else:
                     status_msg = f"unknown: {cmd}  (/help)"
+                    status_time = time.time()
+                    continue
+
+                elif cmd == "/summarize":
+                    if not exchanges:
+                        status_msg = "nothing to summarize yet"
+                        status_time = time.time()
+                        continue
+                
+                    summary_prompt = (
+                        "Please write a concise summary of this conversation for future reference. "
+                        "2-4 sentences capturing the key topics, decisions, or things learned. "
+                        "Write it in third person, starting with 'User...' or describing what was discussed. "
+                        "No preamble, just the summary."
+                    )
+                
+                    done_event = threading.Event()
+                    result = {"text": None, "error": None}
+                
+                    def api_thread_summary():
+                        temp_messages = api_messages + [{
+                            "role": "user",
+                            "content": summary_prompt
+                        }]
+                        result["text"], result["error"] = fetch_response(
+                            client, temp_messages, BASE_SYSTEM_PROMPT
+                        )
+                        done_event.set()
+                
+                    thread = threading.Thread(target=api_thread_summary, daemon=True)
+                    thread.start()
+                    animate_thinking(stdscr, done_event)
+                    thread.join()
+                
+                    if result["error"]:
+                        status_msg = result["error"]
+                        status_time = time.time()
+                        continue
+                
+                    summary = result["text"].strip()
+                    title = session_data.get("title", "untitled")
+                    date = time.strftime("%Y-%m-%d")
+                    entry = f"\n[{date} — {title}]\n{summary}\n"
+                
+                    try:
+                        with open(CONTEXT_FILE, 'a') as f:
+                            f.write(entry)
+                        status_msg = "summary appended to ~/context.txt"
+                    except Exception as e:
+                        status_msg = f"couldn't write context.txt: {e}"
                     status_time = time.time()
                     continue
 
